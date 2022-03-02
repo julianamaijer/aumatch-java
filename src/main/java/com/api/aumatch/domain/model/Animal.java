@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Animal {
 
+    private Long idAnimal;
     private String nome;
     private String raca;
     private Integer idade;

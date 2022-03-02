@@ -15,10 +15,4 @@ public interface AdotanteMapper {
 
     Adotante toAdotante(AdotanteDTO adotanteDTO);
 
-    Chat toChat(ChatDTO chatDTO);
-
-    Animal toAnimal(AnimalDTO animalDTO);
-
-    Endereco toEndereco(EnderecoDTO enderecoDTO);
-
 }

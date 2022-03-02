@@ -42,7 +42,8 @@ public class AdotanteController {
 
 
     @PutMapping("/{idAdotante}")
-    public ResponseEntity<?> alterarAdotante(@PathVariable Long idAdotante, @RequestBody Adotante adotante){
+    public ResponseEntity<?> alterarAdotante(@PathVariable Long idAdotante, @RequestBody AdotanteDTO adotanteDTO){
+        Adotante adotante = adotanteMapper.toAdotante(adotanteDTO);
         return ResponseEntity.ok(adotanteService.atualizar(idAdotante,adotante));
     }
 
